@@ -26,9 +26,8 @@ const ThemeWrapper: FC<ThemeContextProps> = ({ children }) => {
             <nav className={styles.sidebar}>
               <Navbar />
             </nav>
-            <main className={styles.main}></main>
+            <main className={styles.main}>{children}</main>
           </div>
-          {children}
         </body>
       </html>
     </ThemeContextProvider>
