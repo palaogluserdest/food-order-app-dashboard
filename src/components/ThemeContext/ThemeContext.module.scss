@@ -6,16 +6,15 @@
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas: "sidebar main";
-}
 
-.sidebar {
-  height: 100vh;
-  grid-area: sidebar;
-  background-color: i.$secondary-color;
-}
+  .sidebar {
+    height: 100vh;
+    grid-area: sidebar;
+  }
 
-.main {
-  height: 100vh;
-  grid-area: main;
-  background-color: i.$bg-color;
+  .main {
+    height: 100vh;
+    grid-area: main;
+    background-color: i.$bg-color;
+  }
 }

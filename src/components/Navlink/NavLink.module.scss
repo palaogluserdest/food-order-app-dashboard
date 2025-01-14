@@ -1,0 +1,52 @@
+@use '@/styles/index' as i;
+
+.navLink {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 20px 25px 20px;
+
+  &:hover {
+    svg.icons {
+      fill: i.$text;
+    }
+  }
+}
+
+.uir,
+.dir {
+  display: none;
+}
+
+.active {
+  background-color: i.$bg-color;
+  border-radius: 12px 0 0 12px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 23px;
+    height: 100%;
+    background-color: i.$bg-color;
+    right: -23px;
+    top: 0;
+  }
+
+  .uir {
+    display: block;
+    fill: i.$bg-color;
+    position: absolute;
+    top: -12px;
+    right: -25px;
+  }
+
+  .dir {
+    display: block;
+    fill: i.$bg-color;
+    position: absolute;
+    bottom: -24px;
+    right: -25px;
+  }
+}
