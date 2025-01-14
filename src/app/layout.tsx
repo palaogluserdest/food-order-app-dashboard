@@ -1,12 +1,13 @@
 import type { Metadata } from 'next';
-import { Barlow } from 'next/font/google';
-import './globals.css';
+// import { Barlow } from 'next/font/google';
+import './globals.scss';
+import ThemeWrapper from '@/components/ThemeContext';
 
-const barlow = Barlow({
-  variable: '--font-barlow',
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-});
+// const barlow = Barlow({
+//   variable: '--font-barlow',
+//   subsets: ['latin'],
+//   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+// });
 
 export const metadata: Metadata = {
   title: "Archi's Food Admin Dashboard",
@@ -18,9 +19,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={`${barlow.variable}`}>{children}</body>
-    </html>
-  );
+  return <ThemeWrapper>{children}</ThemeWrapper>;
 }

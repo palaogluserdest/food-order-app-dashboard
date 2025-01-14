@@ -16,7 +16,7 @@ $dark-orange: #FFB57233;
 
 
 // => Typography
-$barlow: 'Barlow', sans-serif;
+$barlow: var(--font-barlow), sans-serif;
 
 
 // => Window Sizes

@@ -1,0 +1,21 @@
+@use '@/styles/index' as i;
+
+.container {
+  display: grid;
+  grid-template-columns: 104px 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "sidebar main";
+}
+
+.sidebar {
+  height: 100vh;
+  grid-area: sidebar;
+  background-color: i.$secondary-color;
+}
+
+.main {
+  height: 100vh;
+  grid-area: main;
+  background-color: i.$bg-color;
+}
