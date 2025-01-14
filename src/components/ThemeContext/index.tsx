@@ -2,6 +2,7 @@
 import { ThemeContext, ThemeContextProvider } from '@/contexts/ThemeContext';
 import { FC, useContext } from 'react';
 import { Barlow } from 'next/font/google';
+import Navbar from '@/components/Navbar';
 import styles from './ThemeContext.module.scss';
 
 const barlow = Barlow({
@@ -22,8 +23,10 @@ const ThemeWrapper: FC<ThemeContextProps> = ({ children }) => {
       <html lang="en" data-theme={theme}>
         <body className={`${barlow.variable}`}>
           <div className={styles.container}>
-            <div className={styles.sidebar}>sidebar</div>
-            <div className={styles.main}></div>
+            <nav className={styles.sidebar}>
+              <Navbar />
+            </nav>
+            <main className={styles.main}></main>
           </div>
           {children}
         </body>

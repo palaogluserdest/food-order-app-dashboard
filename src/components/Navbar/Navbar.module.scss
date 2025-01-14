@@ -1,0 +1,69 @@
+@use '@/styles/index' as i;
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: i.$secondary-color;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+
+  .icons {
+    fill: i.$primary-color;
+  }
+
+  .logo {
+    width: 100%;
+    height: 100%;
+    flex: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logoWrapper {
+      padding: 10px;
+      border: none;
+      border-radius: 12px;
+      background-color: i.$dark-orange;
+    }
+  }
+
+  .themeToggle {
+    width: 100%;
+    height: 100%;
+    flex: 0.2;
+  }
+
+  .menuList {
+    width: 100%;
+    height: 100%;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 0;
+
+    .menu-item {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+
+    }
+  }
+
+  .logOut {
+    width: 100%;
+    height: 100%;
+    flex: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}
