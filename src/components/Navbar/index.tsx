@@ -54,7 +54,7 @@ const Navbar = () => {
         </li>
       </ul>
       <div className={styles.logOut}>
-        <Logout width={40} height={40} className={styles.icons} />
+        <Logout width={40} height={40} className={styles.logoutIcon} />
       </div>
     </div>
   );

@@ -10,11 +10,12 @@
   .sidebar {
     height: 100vh;
     grid-area: sidebar;
+    background-color: i.$secondary-color;
   }
 
   .main {
     height: 100vh;
     grid-area: main;
-    background-color: i.$bg-color;
+    background-color: var(--background);
   }
 }

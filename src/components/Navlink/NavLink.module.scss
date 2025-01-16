@@ -8,7 +8,7 @@
   padding: 25px 20px 25px 20px;
 
   &:hover {
-    svg.icons {
+    svg[width="40"] {
       fill: i.$text;
     }
   }
@@ -20,27 +20,24 @@
 }
 
 .active {
-  background-color: i.$bg-color;
+  background-color: var(--background);
   border-radius: 12px 0 0 12px;
   position: relative;
 
-  svg[width="40"] {
-    fill: i.$text !important;
-  }
 
   &::after {
     position: absolute;
     content: '';
     width: 23px;
     height: 100%;
-    background-color: i.$bg-color;
+    background-color: var(--background);
     right: -23px;
     top: 0;
   }
 
   .uir {
     display: block;
-    fill: i.$bg-color;
+    fill: var(--background);
     position: absolute;
     top: -12px;
     right: -25px;
@@ -48,7 +45,7 @@
 
   .dir {
     display: block;
-    fill: i.$bg-color;
+    fill: var(--background);
     position: absolute;
     bottom: -24px;
     right: -25px;

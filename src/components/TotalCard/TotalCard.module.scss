@@ -1,0 +1,69 @@
+@use '@/styles/index' as i;
+
+.container {
+  max-width: 200px;
+  width: 100%;
+  height: 143px;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  background-color: var(--backgroundCard);
+
+  .up {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+
+    .mainIcon {
+      width: 38px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 7px;
+      background-color: var(--background);
+      border-radius: 8px;
+    }
+
+    .chancing {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-style: 12px;
+      font-weight: 500;
+
+      .chanIconWrapper {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        border-radius: 50%;
+
+        .upDown {
+          z-index: 2;
+          transform: translate(-3px, -1px);
+        }
+      }
+    }
+
+  }
+
+  .center {
+    width: 100%;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .down {
+    color: i.$light-gray;
+  }
+}

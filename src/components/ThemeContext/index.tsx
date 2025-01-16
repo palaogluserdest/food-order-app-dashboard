@@ -16,7 +16,7 @@ type ThemeContextProps = {
 };
 
 const ThemeWrapper: FC<ThemeContextProps> = ({ children }) => {
-  const { theme } = useContext(ThemeContext) ?? { theme: 'light' };
+  const { theme } = useContext(ThemeContext) ?? { theme: 'dark' };
 
   return (
     <ThemeContextProvider>
