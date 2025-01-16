@@ -1,21 +1,23 @@
 @import '@/styles/index';
 
 :root {
-  --background: #fff;
-  --text-color: #fff;
+  --background: #f5f6fa;
+  --backgroundCard: #fff;
+  --text-color: #000;
 }
 
 :root[data-theme="dark"] {
   --background: #252836;
+  --backgroundCard: #1F1D2B;
   --text-color: #fff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #252836;
-    --text-color: #fff;
-  }
-}
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --background: #252836;
+//     --text-color: #fff;
+//   }
+// }
 
 html,
 body {
@@ -25,7 +27,7 @@ body {
 }
 
 body {
-  color: var(--foreground);
+  color: var(--text-color);
   background: var(--background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -52,8 +54,8 @@ button {
   background: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
+// @media (prefers-color-scheme: dark) {
+//   html {
+//     color-scheme: dark;
+//   }
+// }
