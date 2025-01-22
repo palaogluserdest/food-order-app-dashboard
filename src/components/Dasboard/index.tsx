@@ -4,6 +4,7 @@ import Order from '@/assets/icons/orders.svg';
 import People from '@/assets/icons/people.svg';
 import styles from './Dashboard.module.scss';
 import OrderList from '../OrderList';
+import MostOrdered from '../MostOrdered';
 
 const DashboardComponent = () => {
   return (
@@ -23,7 +24,9 @@ const DashboardComponent = () => {
         </div>
       </div>
       <div className={styles.right}>
-        <div className={styles.mostOrdered}></div>
+        <div className={styles.mostOrdered}>
+          <MostOrdered />
+        </div>
         <div className={styles.mostOrderTypes}></div>
       </div>
     </div>

@@ -12,3 +12,10 @@ export type Order = {
   totalPayment: number;
   status: string;
 };
+
+export type MostOrderedList = {
+  id: string;
+  name: string;
+  totalOrder: number;
+  dishImage: string;
+};

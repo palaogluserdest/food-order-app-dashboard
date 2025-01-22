@@ -1,0 +1,92 @@
+@use '@/styles/index' as i;
+
+
+.container {
+  width: 100%;
+  background-color: var(--backgroundCard);
+  color: var(--text-color);
+  border-radius: 8px;
+  padding: 24px;
+
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 2px solid i.$dark-gray;
+
+    .title {
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    .selectGroup {
+      position: relative;
+      cursor: pointer;
+
+      .select {
+        border: 1px solid i.$dark-gray;
+        padding: 14px;
+        border-radius: 8px;
+        background-color: transparent;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text-color);
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        outline: none;
+        text-align: end;
+        cursor: pointer;
+      }
+
+      .arrow {
+        position: absolute;
+        left: 10px;
+        top: 62%;
+        transform: translateY(-50%);
+      }
+    }
+
+  }
+
+  .mOrderedList {
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .mOrderedCards {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      justify-content: center;
+      align-items: flex-start;
+
+      .mOrderedCardItem {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+
+        .imgWrapper {
+          width: 56px;
+          height: 56px;
+          position: relative;
+
+        }
+
+        .content {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+        }
+      }
+    }
+  }
+}
